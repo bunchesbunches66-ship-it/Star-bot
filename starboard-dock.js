@@ -1,5 +1,5 @@
-// Moon Sparkles Character Configuration
-const moonSparkles = {
+// Moon spa Character Configuration
+const moonspa = {
   appearance: {
     skinColor: "green",
     accessories: ["pink antennas", "earmuffs"],
@@ -10,15 +10,15 @@ const moonSparkles = {
   },
   actions: {
     walk: function() {
-      console.log("Moon Sparkles takes two steps forward, a slight turn left, and one step back.");
+      console.log("Moon spa takes two steps forward, a slight turn left, and one step back.");
     },
     changeEyeColor: function(emotion) {
       if (emotion === "happy" || emotion === "cute") {
         this.state.eyeColor = "gold";
-        console.log("Moon Sparkles's eyes glow gold!");
+        console.log("Moon spa's eyes glow gold!");
       } else if (emotion === "mad") {
         this.state.eyeColor = "soft purple";
-        console.log("Moon Sparkles's eyes turn soft purple.");
+        console.log("Moon spa's eyes turn soft purple.");
       }
     },
     respondToCompliment: function(compliment) {
@@ -31,6 +31,6 @@ const moonSparkles = {
 };
 
 // Test the character
-console.log("Loading Moon Sparkles...");
-moonSparkles.walk();
-moonSparkles.respondToCompliment("You're cute");
+console.log("Loading Moon spa...");
+moonspa.walk();
+moonspa.respondToCompliment("You're cute");
