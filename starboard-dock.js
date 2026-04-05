@@ -1,5 +1,5 @@
-// Starbot Character Configuration
-const starbot = {
+// Moon Sparkles Character Configuration
+const moonSparkles = {
   appearance: {
     skinColor: "green",
     accessories: ["pink antennas", "earmuffs"],
@@ -10,15 +10,15 @@ const starbot = {
   },
   actions: {
     walk: function() {
-      console.log("Starbot takes two steps forward, a slight turn left, and one step back.");
+      console.log("Moon Sparkles takes two steps forward, a slight turn left, and one step back.");
     },
     changeEyeColor: function(emotion) {
       if (emotion === "happy" || emotion === "cute") {
         this.state.eyeColor = "gold";
-        console.log("Starbot's eyes glow gold!");
+        console.log("Moon Sparkles's eyes glow gold!");
       } else if (emotion === "mad") {
         this.state.eyeColor = "soft purple";
-        console.log("Starbot's eyes turn soft purple.");
+        console.log("Moon Sparkles's eyes turn soft purple.");
       }
     },
     respondToCompliment: function(compliment) {
@@ -31,6 +31,6 @@ const starbot = {
 };
 
 // Test the character
-console.log("Loading Starbot...");
-starbot.walk();
-starbot.respondToCompliment("You're cute");
+console.log("Loading Moon Sparkles...");
+moonSparkles.walk();
+moonSparkles.respondToCompliment("You're cute");
